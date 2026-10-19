@@ -1,4 +1,4 @@
- // part 2 commit 1
+ // part 2 commit 2
 import java.util.Scanner;
 import java.util.ArrayList;
 
