@@ -1,4 +1,4 @@
-//commit 2-data model
+// commit 3-chat GUI
 package com.mycompany.chatapp;
 import java.util.Scanner;
 
