@@ -1,4 +1,4 @@
-// commit 5-search
+// commit 6- final polish
 package com.mycompany.chatapp;
 import java.util.Scanner;
 
