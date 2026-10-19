@@ -1,4 +1,4 @@
-// commit 3-chat GUI
+// commit 4- file persistence
 package com.mycompany.chatapp;
 import java.util.Scanner;
 
