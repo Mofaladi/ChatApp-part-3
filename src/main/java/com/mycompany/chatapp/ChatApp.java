@@ -1,3 +1,4 @@
+//commit 2-data model
 package com.mycompany.chatapp;
 import java.util.Scanner;
 
