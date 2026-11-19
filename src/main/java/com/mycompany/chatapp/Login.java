@@ -1,7 +1,13 @@
- public class Login {
+package com.mycompany.chatapp;
+
+public class Login {
     private String username;
     private String password;
     private String cellphone;
+    
+    
+public Login() {
+}
 
     public Login(String username, String password, String cellphone) {
         this.username = username;
@@ -12,6 +18,10 @@
     public boolean checkUserName(String username) {
         return username.contains("_") && username.length() <= 5;
     }
+    
+public boolean checkUsername(String username) {
+    return checkUserName(username);
+}
 
     public boolean checkPasswordComplexity(String password) {
         return password.length() >= 8 && 
@@ -19,10 +29,18 @@
                password.matches(".*[0-9].*") && 
                password.matches(".*[!@#$%^&*].*");
     }
+    
+public boolean checkPassword(String password) {
+    return checkPasswordComplexity(password);
+}
 
     public boolean checkCellPhoneNumber(String cell) {
-        return cell.length() <= 10 && cell.startsWith("+");
-    }
+    return cell.length() == 12 && cell.startsWith("+27");
+}
+    
+public boolean checkCell(String cell) {
+    return checkCellPhoneNumber(cell);
+}
 
     public String registerUser(String u, String p, String cell) {
         if (!checkUserName(u)) {

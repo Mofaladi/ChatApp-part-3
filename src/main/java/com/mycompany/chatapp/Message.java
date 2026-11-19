@@ -1,3 +1,5 @@
+package com.mycompany.chatapp;
+
 import java.util.Random;
 
 public class Message {
@@ -13,6 +15,29 @@ public class Message {
         this.messageText = messageText;
         this.messageHash = createMessageHash();
     }
+    
+public Message(int messageNumber, String recipient, String messageText) {
+    this.recipient = recipient;
+    this.messageText = messageText;
+    this.messageID = generateMessageID();
+    this.messageHash = createMessageHash();
+}
+
+public void setMessageID(String messageID) {
+    this.messageID = messageID;
+}
+
+public String SentMessage(int option) {
+    if (option == 1) {
+        return "Message successfully sent.";
+    } else if (option == 2) {
+        return "Press 0 to delete the message.";
+    } else if (option == 3) {
+        return "Message successfully stored.";
+    } else {
+        return "";
+    }
+}
 
     public String generateMessageID() {
         Random rand = new Random();
@@ -24,9 +49,13 @@ public class Message {
         return messageID.length() <= 10;
     }
 
-    public boolean checkRecipientCell() {
-        return recipient.length() <= 10 && recipient.startsWith("+");
+   public String checkRecipientCell() {
+    if (recipient.length() == 12 && recipient.startsWith("+27")) {
+        return "Cell phone number successfully captured.";
+    } else {
+        return "Cell phone number is incorrectly formatted or does not contain an international code. Please correct the number and try again.";
     }
+}
 
     public String checkMessageLength() {
         if (messageText.length() <= 250) {
@@ -65,4 +94,14 @@ public class Message {
     public String getRecipient() { return recipient; }
     public String getMessageText() { return messageText; }
     public String getMessageHash() { return messageHash; }
+        // ===== PART 3 - ADDED =====
+    private String flag = "";
+
+    public String getFlag() {
+        return flag;
+    }
+
+    public void setFlag(String flag) {
+        this.flag = flag;
+    }
 }

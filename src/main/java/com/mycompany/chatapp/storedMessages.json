@@ -1,0 +1,37 @@
+[
+  {
+    "messageID": "001",
+    "recipient": "+27834557896",
+    "messageText": "Did you get the cake?",
+    "messageHash": "00:0:DIDCAKE",
+    "flag": "Sent"
+  },
+  {
+    "messageID": "002",
+    "recipient": "+27838884567",
+    "messageText": "Where are you? You are late! I have asked you to be on time.",
+    "messageHash": "01:1:WHEREYOU",
+    "flag": "Stored"
+  },
+  {
+    "messageID": "003",
+    "recipient": "+27834484567",
+    "messageText": "Yohoooo, I am at your gate.",
+    "messageHash": "02:2:YOHOOOOO",
+    "flag": "Disregard"
+  },
+  {
+    "messageID": "004",
+    "recipient": "0838884567",
+    "messageText": "It is dinner time !",
+    "messageHash": "03:3:ITISDIN",
+    "flag": "Sent"
+  },
+  {
+    "messageID": "005",
+    "recipient": "+27838884567",
+    "messageText": "Ok, I am leaving without you.",
+    "messageHash": "04:4:OKIAMLE",
+    "flag": "Stored"
+  }
+]
